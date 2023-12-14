@@ -23,6 +23,10 @@ namespace bdd.workshop.calculator.console
                 case ("/"):
                     Console.WriteLine(Operator.Divide(a, b));
                     break;
+                case ("sqrt"):
+                    Console.WriteLine(Operator.SquareRoot(a));
+                    break;
+
                 default:
                     Console.WriteLine("Possible operators: +,-,x,/: i.e.: 3 + 4");
                     break;

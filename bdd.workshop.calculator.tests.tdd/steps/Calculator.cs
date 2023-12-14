@@ -69,6 +69,12 @@ namespace bdd.workshop.calculator.tests.tdd.steps
             _scenarioContext.Add("Result", Operator.Divide(firstNumber, secondNumber));
         }
 
+        [When(@"I square root a number")]
+        public void WhenISquareRootNumber()
+        {
+            var firstNumber = _scenarioContext.Get<int>("FirstNumber");
+            _scenarioContext.Add("Result", Operator.SquareRoot(firstNumber));
+        }
 
         [Then(@"the result is (.*)")]
         public void ThenTheResultIs(double result)
